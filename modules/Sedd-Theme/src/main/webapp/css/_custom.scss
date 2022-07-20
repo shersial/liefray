@@ -1,0 +1,181 @@
+/* These inject tags are used for dynamically creating imports for themelet styles, you can place them where ever you like in this file. */
+
+/* inject:imports */
+/* endinject */
+
+/* This file allows you to override default styles in one central location for easier upgrade and maintenance. */
+//@import fontaewsome
+//@import url(../fonts/css/all.css);
+//hide overlap arrow
+.dropdown-toggle::after {
+  display: none;
+}
+
+
+/*responsiveness */
+@media (min-width: 576px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 540px;
+  }
+  .navbar-expand-lg .nav-right ul.nav-setting {
+    width: 65vw;
+  }
+  footer {
+    width: 100%;
+    height: 324px;
+    background-image: linear-gradient(0deg, rgba(192.00000375509262, 202.00000315904617, 197.0000034570694, 0.23999999463558197) 0%, rgba(255, 255, 255, 0.28999999165534973) 50.33009648323059%, rgba(192.00000375509262, 202.00000315904617, 197.0000034570694, 0.5099999904632568) 100%);
+
+    .footer-top {
+      padding: 1rem;
+      .footer-call-center {
+        a {
+          display: flex;
+          justify-content: center;
+          color: #0c4128;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+
+        p {
+          font-size: 1.25rem;
+          font-weight: bold;
+        }
+
+        i {
+          padding: 0 1.25rem;
+          font-size: 2.25rem;
+        }
+
+        svg {
+          padding: 0 1.25rem;
+          font-size: 2.25rem;
+        }
+      }
+      .footer-top-extra{
+        display: flex;
+        justify-content: space-between;
+        .visitor{
+          display:flex;
+          flex-direction: column;
+          color: var(--primary);
+          text-align: center;
+          .title{
+            font-size:1.125rem ;
+            padding-bottom:1.3125rem ;
+          }
+          .number{
+            font-weight: bold;
+          }
+        }
+        .social{
+          display:flex;
+          flex-direction: column;
+          color: var(--primary);
+          .title{
+            font-size:1.125rem ;
+            padding-bottom:1.3125rem ;
+            text-align: center;
+          }
+          .icons{
+            display: flex;
+            justify-content: center;
+            a{
+              padding: 0 9px;
+              color: var(--primary);
+              &hover{
+                color: var(--brand-color-2);
+              }
+              i,svg{
+                font-size:2.25rem ;
+              }
+            }
+
+          }
+
+        }
+        .apps{
+          display:flex;
+          flex-direction: column;
+          color: var(--primary);
+          text-align: center;
+          .title{
+            font-size:1.125rem ;
+            padding-bottom:1.3125rem ;
+          }
+        }
+      }
+      .footer-info-row{
+        text-align: center;
+      }
+    }
+    .footer-bottom{
+      background: var(--primary);
+      display: flex;
+      padding:13px 30px ;
+      color: var(--white);
+    }
+    .right-content{
+      text-align: end;
+    }
+    .left-content{
+      text-align: start;
+    }
+  }
+
+
+}
+
+@media (min-width: 768px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 720px;
+  }
+
+  .navbar-expand-lg .nav-right ul.nav-setting {
+    width: 80vw;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 960px;
+  }
+
+  .navbar-expand-lg .nav-right ul.nav-setting {
+    width: 45vw;
+  }
+
+
+
+}
+
+@media (min-width: 1200px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1140px;
+  }
+
+  .navbar-expand-lg .nav-right ul.nav-setting {
+    width: 65vw;
+  }
+
+
+
+
+}
+
+@media (min-width: 1400px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1440px;
+  }
+
+  .navbar-expand-lg .nav-right ul.nav-setting {
+    width: 65vw;
+  }
+
+
+
+
+}
