@@ -28,7 +28,16 @@
 				</div>
 				<div class="apps">
 					<div class="title">Download and register on apps now</div>
-					<a href=""><img src="" alt=""></a><a href=""><img src="" alt=""></a></div>
+					<ul>
+						<li>
+							<a href=""><img src="/documents/20121/53362/google-badge.png/f6411b85-78cd-20f8-0afc-bda5bb6f3a9a?version=1.0&t=1658335795532&imageThumbnail=1" alt="Google badge"></a>
+						</li>
+						<li>
+							<a href=""><img src="/documents/20121/53362/apple-badge.png/c2bcaecf-c755-8a5f-0881-2e8f0e6ea59b?version=1.0&t=1658335795286&imageThumbnail=1" alt="Apple Play Badge"></a>
+						</li>
+					</ul>
+
+					</div>
 			</div>
 			<div class="footer-info-row ">
 				<span> Page last updated on : <span id="last_modify"></span> |    </span>

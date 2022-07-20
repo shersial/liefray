@@ -27,29 +27,44 @@
 
 
 	<header id="header" role="header">
-		<nav class="navbar navbar-light bg-light">
-		<div id="heading">
-			<div aria-level="1" class="site-title" role="heading">
-				<a class="${logo_css_class}" href="${site_default_url}" title="<@liferay.language_format arguments="${site_name}" key="go-to-x" />">
-					<img alt="${logo_description}" height="${site_logo_height}" src="https://sedd.ae/o/sedd-theme-dxp/images/theme/sedd-weblogo-en.png" width="${site_logo_width}" />
+		<div class="container">
+		<nav class="navbar navbar-light ">
+				<a class="navbar-brand ${logo_css_class}" href="${site_default_url} title="<@liferay.language_format arguments="${site_name}" key="go-to-x" />">
+					<img src="/o/Sedd-Theme/images/android-icon-48x48.png" alt="${logo_description}"  class="d-inline-block align-text-top">
+					<span class="logo-text">
+						<p>Government Of Sharjah</p>
+						<p>Economic Development Department</p>
+					</span>
 				</a>
-
-<#--				<#if show_site_name>-->
-<#--					<span class="site-name" title="<@liferay.language_format arguments="${site_name}" key="go-to-x" />">-->
-<#--						${site_name}-->
-<#--					</span>-->
-<#--				</#if>-->
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<#if has_navigation && is_setup_complete>
+					<#include "${full_templates_path}/navigation.ftl" />
+				</#if>
 			</div>
-		</div>
+<#--		<div id="heading">-->
+<#--			<div aria-level="1" class="site-title" role="heading">-->
+<#--				<a class="${logo_css_class}" href="${site_default_url}" title="<@liferay.language_format arguments="${site_name}" key="go-to-x" />">-->
+<#--					<img alt="${logo_description}" height="${site_logo_height}" src="https://sedd.ae/o/sedd-theme-dxp/images/theme/sedd-weblogo-en.png" width="${site_logo_width}" />-->
+<#--				</a>-->
+
+<#--&lt;#&ndash;				<#if show_site_name>&ndash;&gt;-->
+<#--&lt;#&ndash;					<span class="site-name" title="<@liferay.language_format arguments="${site_name}" key="go-to-x" />">&ndash;&gt;-->
+<#--&lt;#&ndash;						${site_name}&ndash;&gt;-->
+<#--&lt;#&ndash;					</span>&ndash;&gt;-->
+<#--&lt;#&ndash;				</#if>&ndash;&gt;-->
+<#--			</div>-->
+<#--		</div>-->
 
 <#--		<#if !is_signed_in>-->
 <#--			<a data-redirect="${is_login_redirect_required?string}" href="${sign_in_url}" id="sign-in" rel="nofollow">${sign_in_text}</a>-->
 <#--		</#if>-->
 
-		<#if has_navigation && is_setup_complete>
-			<#include "${full_templates_path}/navigation.ftl" />
-		</#if>
+
 		</nav>
+		</div>
 	</header>
 
 	<section id="main">
