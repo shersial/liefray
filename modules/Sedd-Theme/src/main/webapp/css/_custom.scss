@@ -116,9 +116,23 @@
       display: flex;
       padding:13px 30px ;
       color: var(--white);
+      justify-content: space-evenly;
     }
     .right-content{
       text-align: end;
+      ul{
+        list-style: none;
+        display: flex;
+        li{
+          padding: 0 8px;
+          a{
+            color: var(--white);
+            &hover{
+              color: var(--gray-700);
+            }
+          }
+        }
+      }
     }
     .left-content{
       text-align: start;
