@@ -38,7 +38,12 @@
 
 		</div>
 		<div class="footer-bottom">
-			<div class="col-lg-6">All rights reserved to Sharjah Department of Economic Development © <span id="year"></span></div>
-			<div class="col-lg-6"><span>Privacy policy</span> <span>Terms of use</span></div>
+			<div class="left-content">All rights reserved to Sharjah Department of Economic Development © <span id="year"></span></div>
+			<div class="right-content">
+				<ul>
+					<li><a href="">Privacy policy</a></li>
+					<li><a href="">Terms of use</a></li>
+				</ul>
+			</div>
 		</div>
 
