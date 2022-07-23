@@ -1,5 +1,5 @@
 		<div class="footer-top">
-			<div class="footer-call-center ">
+			<div class="footer-call-center col-lg-12 col-md-12 col-sm-12">
 				<a href="tel:80080000">
 					<div class="call-center-text"><p>Free line</p></div>
 					<i class="fa-regular fa-headset"></i>
@@ -11,12 +11,12 @@
 					<#include "${full_templates_path}/footer_navigation.ftl" />
 				</#if>
 			</div>
-			<div class="footer-top-extra">
-				<div class="visitor">
+			<div class="footer-top-extra row">
+				<div class="visitor col-lg-4 col-md-14 col-sm-12">
 					<div class="title">Visitors Counter</div>
 					<div class="number">9,330,637 </div>
 				</div>
-				<div class="social">
+				<div class="social col-lg-4 col-md-14 col-sm-12">
 					<div class="title">Follow Us</div>
 					<div class="icons">
 						<a href=""><i class="fa-brands fa-twitter"></i></i></a>
@@ -26,7 +26,7 @@
 					</div>
 
 				</div>
-				<div class="apps">
+				<div class="apps col-lg-4 col-md-14 col-sm-12">
 					<div class="title">Download and register on apps now</div>
 					<ul>
 						<li>
