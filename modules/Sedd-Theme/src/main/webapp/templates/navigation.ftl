@@ -5,26 +5,33 @@
 				nav_item_attr_has_popup = ""
 				nav_item_css_class = "nav-item"
 				nav_link_css_class = "nav-link"
+				nav_link_attr_has_popup  = ""
 				nav_item_layout = nav_item.getLayout()
 			/>
-
-
-
 			<#if nav_item.isSelected()>
 				<#assign
 					nav_item_attr_has_popup = "aria-haspopup='true'"
-					nav_link_css_class = "selected"
+					nav_link_css_class = "${nav_link_css_class} active"
 				/>
 			</#if>
-
+			<#if nav_item.hasChildren()>
+					<#assign
+					nav_item_css_class = "${nav_item_css_class} dropdown"
+					nav_link_attr_has_popup  = "data-bs-toggle='dropdown'"
+					nav_link_css_class = "${nav_link_css_class} dropdown-toggle"
+					/>
+			</#if>
 			<li class="${nav_item_css_class}" id="layout_${nav_item.getLayoutId()}" role="presentation">
-				<a ${nav_link_css_class} ${nav_item_attr_has_popup} href="${nav_item.getURL()}" ${nav_item.getTarget()} role="menuitem"><span><@liferay_theme["layout-icon"] layout=nav_item_layout /> ${nav_item.getName()}</span></a>
+				<a class="${nav_link_css_class}"  ${nav_item_attr_has_popup}  ${nav_link_attr_has_popup} href="${nav_item.getURL()}" ${nav_item.getTarget()} role="menuitem"><@liferay_theme["layout-icon"] layout=nav_item_layout /> ${nav_item.getName()}</a>
 
 				<#if nav_item.hasChildren()>
-					<ul class="child-menu" role="menu">
+
+					<ul class="dropdown-menu" role="menu">
 						<#list nav_item.getChildren() as nav_child>
+
 							<#assign
 								nav_child_css_class = ""
+								nav_child_link_css_class = "dropdown-item"
 							/>
 
 							<#if nav_item.isSelected()>
@@ -33,8 +40,8 @@
 								/>
 							</#if>
 
-							<li class="${nav_child_css_class}" id="layout_${nav_child.getLayoutId()}" role="presentation">
-								<a href="${nav_child.getURL()}" ${nav_child.getTarget()} role="menuitem">${nav_child.getName()}</a>
+							<li  id="layout_${nav_child.getLayoutId()}" role="presentation">
+								<a class="${nav_child_link_css_class}" href="${nav_child.getURL()}" ${nav_child.getTarget()} role="menuitem">${nav_child.getName()}</a>
 							</li>
 						</#list>
 					</ul>

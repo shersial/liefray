@@ -29,11 +29,16 @@
 	<header id="header" role="header">
 		<div class="container">
 		<nav class="navbar navbar-light ">
+
 				<a class="navbar-brand ${logo_css_class}" href="${site_default_url} title="<@liferay.language_format arguments="${site_name}" key="go-to-x" />">
+					<span class="logo-text-ar d-none d-sm-block d-md-none d-lg-none ">
+						<p lang="ar">حكومة الشارقة</p>
+						<p lang="ar">دائرة التنمية الاقتصادية</p>
+					</span>
 					<img src="/o/Sedd-Theme/images/android-icon-48x48.png" alt="${logo_description}"  class="d-inline-block align-text-top">
-					<span class="logo-text">
-						<p>Government Of Sharjah</p>
-						<p>Economic Development Department</p>
+					<span class="logo-text-en">
+						<p  lang="en">Government Of Sharjah</p>
+						<p  lang="en">Economic Development Department</p>
 					</span>
 				</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
